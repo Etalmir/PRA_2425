@@ -1,8 +1,8 @@
-bin/testListArray: testListArray.cpp ListArray.o List.h
+bin/testListArray: testListArray.cpp ListArray.h Generic_list.h
 	mkdir -p bin
-	g++ -o bin/testListArray testListArray.cpp ListArray.o
+	g++ -o bin/testListArray testListArray.cpp ListArray.h
 
-ListArray.o: ListArray.cpp List.h
+ListArray.o: ListArray.cpp Generic_list.h
 	g++ -c ListArray.cpp
 
 clean:
