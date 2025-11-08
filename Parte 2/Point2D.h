@@ -13,11 +13,13 @@ class Point2D{
         // Cálculo de la distancia euclidiana entre a y b
         static double distance(const Point2D &a, const Point2D &b);
 
+        // Operador global !=
         friend bool operator!=(const Point2D &a, const Point2D &b);
 
         // Operador global ==
         friend bool operator==(const Point2D &a, const Point2D &b);
 
+        // Operador global de salida (x, y)
         friend std::ostream& operator<<(std::ostream& out , const Point2D& point);
 
 };
